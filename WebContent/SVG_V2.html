@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+$(function(){
+	$('#minjae').click(function() {
+	         $('.content').html('<embed type="text/html" src="member/minjae.html"/>');
+	      });
+	
+	$('#changhun').click(function() {
+        $('.content').html('<embed type="text/html" src="member/changhun.html"/>');
+     });
+	
+	$('#jinsu').click(function() {
+        $('.content').html('<embed type="text/html" src="member/jinsu.html"/>');
+     });
+	
+	$('#dohyuk').click(function() {
+        $('.content').html('<embed type="text/html" src="member/dohyuk.html"/>');
+     });
+	
+	$('#junseok').click(function() {
+        $('.content').html('<embed type="text/html" src="member/junseok.html"/>');
+     });
+	
+	$('#hoyong').click(function() {
+        $('.content').html('<embed type="text/html" src="member/hoyong.html"/>');
+     });
+	
+	$('#arim').click(function() {
+        $('.content').html('<embed type="text/html" src="member/arim.html"/>');
+     });
+	
+}); 
+	
+</script>
+
+<style type="text/css">
+.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+    
+}
+
+.article {
+    text-align: center;
+}
+
+.teammate{
+	width: 100%;
+	height : 200px;
+	overflow: hidden;
+	align : center;
+	margin-top: 5%;
+    margin-left: 3%; 
+	
+}
+
+.content{
+	height : 300px;
+	padding : 10%;
+	
+}
+
+.nav {background:#eee;
+     width: 10px;
+}
+
+ .box {
+   float: left;
+   background: #000000;
+   border: 1px solid #fff;
+   overflow: hidden;
+   align-items: center;
+   padding: 5px;
+} 
+
+.text {
+   text-align: center;
+   margin-top: 20%;
+   color: #fff;
+   font-size: 1.0em;
+   font-family: sans-serif;
+   text-transform: uppercase;
+}
+
+.animated {
+   animation-duration: 2.5s;
+   animation-fill-mode: both;
+   animation-iteration-count: infinite;
+}
+
+@keyframes bounce { 0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+               40%{transform: translateY(-30px);}
+               60%{transform: translateY(-15px);}}
+
+.bounce {animation-name: bounce;}
+
+@keyframes pulse { 0% {transform: scale(1);}
+               50%{transform: scale(1.1);}
+               100%{transform: scale(1);}}
+.pulse {animation-name: pulse;   animation-duration: 1s;}
+
+@keyframes shake { 0%, 100% {transform: translateX(0);}
+               10%, 30%, 50%, 70%, 90%{transform: translateX(-10px);}
+               20%, 40%, 60%, 80% {transform: translateX(10px);}}
+.shake {animation-name: shake;}
+
+@keyframes swing { 20% {transform: rotate(15deg);}
+               40% {transform: rotate(-10deg);}
+               60% {transform: rotate(5deg);}
+               80% {transform: rotate(-5deg);}
+               100%   {transform: rotate(0deg);}}
+.swing {transform-origin: top center; animation-name: swing;}
+
+@keyframes lightSpeedIn { 0% {transform: translateX(100%) skewX(-30deg); opacity: 0;}
+                    60% {transform: translateX(-20%) skewX(30deg); opacity: 1;}
+                    80% {transform: translateX(0%) skewX(-15deg); opacity: 1;}
+                    100% {transform: translateX(0%) skewX(0deg); opacity: 1;}
+}
+.lightSpeedIn {
+   animation-name: lightSpeedIn;
+   animation-timing-function: ease-out;
+}
+
+@keyframes rollIn {
+  0% {opacity: 0;transform: translateX(-100%) rotate(-120deg);}
+  100% {opacity: 1;transform: translateX(0px) rotate(0deg);}
+}
+.rollIn {
+  animation-name: rollIn;
+}
+
+@keyframes rotateIn {
+  0% {transform-origin: center center;transform: rotate(-200deg);opacity: 0;}
+  100% {transform-origin: center center; transform: rotate(0); opacity: 1;}
+}
+.rotateIn {
+  animation-name: rotateIn;
+}
+
+@media all and (min-width: 768px) {
+    .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+ 
+}
+
+</style>
+</head>
+<body>
+   
+      
+<div class="flex-container">
+   
+   <article class="article">
+   	<div class="teammate">
+   		 <svg id="hoyong" style="margin:10px"class="box" width="100px" height="100px" viewBox="0 0 160 150">
+             <path id="path">
+             <animate attributeName="d" from="m0,100 h0" to="m0,100 h600"
+                     dur="3.0s" begin="0s" repeatCount="indefinite" /></path>
+               <text class="animated rollIn" font-size=80 font-family="Montserrat" fill="white">
+               <textPath xlink:href="#path">호용</textPath></text>
+            </svg>
+         
+       <svg id="minjae" style="margin:10px"class="box" width="100px" height="100px" viewBox="0 0 160 150">
+            <text  class="animated bounce" font-size=80 font-family="Montserrat" fill="white" >
+            <textpath xlink:href="#path">민재</textpath></text>
+         </svg>
+         
+         <svg id="arim" style="margin:10px"class="box" width="100px" height="100px" viewBox="0 0 160 150">        
+            <text class="animated lightSpeedIn" font-size=80 font-family="Montserrat" fill="white">
+            <textPath xlink:href="#path">아림</textPath></text>
+         </svg>
+         
+         <svg id="jinsu" style="margin:10px"class="box" width="100px" height="100px" viewBox="0 0 160 150">
+            <text class="animated shake" font-size=80 font-family="Montserrat" fill="white">
+            <textPath xlink:href="#path">진수</textPath></text>
+         </svg>
+         
+         <svg id="junseok" style="margin:10px"class="box" width="100px" height="100px" viewBox="0 0 160 150">
+            <text class="animated swing" font-size=80 font-family="Montserrat" fill="white">
+            <textPath xlink:href="#path">준석</textPath></text>
+         </svg>
+         
+         <svg id="changhun"style="margin:10px" class="box" width="100px" height="100px" viewBox="0 0 160 150">
+            <text class="animated rotateIn" font-size=80 font-family="Montserrat" fill="white">
+            <textPath xlink:href="#path">창훈</textPath></text>
+         </svg>
+         
+         <svg id="dohyuk" style="margin:10px" class="box" width="100px" height="100px" viewBox="0 0 160 150">
+            <text class="animated pulse" font-size=80 font-family="Montserrat" fill="white">
+            <textPath xlink:href="#path">도혁</textPath></text>
+         </svg>
+   	</div>
+   	<div class ="content"></div>
+  
+  
+
+   	</article>
+ 
+</div>
+</body>
+</html>
